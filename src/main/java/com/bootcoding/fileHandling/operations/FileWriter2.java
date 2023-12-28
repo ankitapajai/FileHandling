@@ -1,13 +1,14 @@
 package com.bootcoding.fileHandling.operations;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class FileWriter2 {
 
     public static void main(String[] args) {
         try{
-            FileWriter2 fw = new FileWriter2(new File("./data.txt"), true);
+            FileWriter fw = new FileWriter(new File("\"C:\\programs\\new.txt\""), true);
 
             for(int i = 0; i < 10; i++){
                 fw.write(generateData());
